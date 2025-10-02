@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Flowing Orange Electric Border</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="main-container">
-      <!-- SVG content Start -->
-      <svg class="svg-container">
-        <defs>
-          <filter
+<svg class="svg-container">
+    <defs>
+        <filter
             id="turbulent-displace"
             colorInterpolationFilters="sRGB"
             x="-20%"
@@ -29,7 +16,7 @@
               seed="1"
             />
             <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
-              <animate
+                <animate
                 attributeName="dy"
                 values="700; 0"
                 dur="6s"
@@ -45,7 +32,7 @@
               seed="1"
             />
             <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
-              <animate
+                <animate
                 attributeName="dy"
                 values="0; -700"
                 dur="6s"
@@ -61,7 +48,7 @@
               seed="2"
             />
             <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
-              <animate
+                <animate
                 attributeName="dx"
                 values="490; 0"
                 dur="6s"
@@ -77,7 +64,7 @@
               seed="2"
             />
             <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
-              <animate
+                <animate
                 attributeName="dx"
                 values="0; -490"
                 dur="6s"
@@ -100,38 +87,6 @@
               xChannelSelector="R"
               yChannelSelector="B"
             />
-          </filter>
-        </defs>
-      </svg>
-      <!-- SVG content End -->
-
-      <div class="card-container">
-        <div class="inner-container">
-          <div class="border-outer">
-            <div class="main-card"></div>
-          </div>
-          <div class="glow-layer-1"></div>
-          <div class="glow-layer-2"></div>
-        </div>
-
-        <div class="overlay-1"></div>
-        <div class="overlay-2"></div>
-        <div class="background-glow"></div>
-
-        <div class="content-container">
-          <div class="content-top">
-            <p class="title engraved">Your electrified border card</p>
-          </div>
-
-          <hr class="divider" />
-
-          <div class="content-bottom">
-            <p class="description">
-              In case you'd like to emphasize something very dramatically.
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
-</html>
+        </filter>
+    </defs>
+</svg>
